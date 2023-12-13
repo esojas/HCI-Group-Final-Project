@@ -1,0 +1,133 @@
+/*navigation section*/
+body{
+    padding: 0;
+    margin: 0;
+}
+#Home {
+    background-color: #7bbcca;
+}
+.toppart {
+    padding: 10px 10%;
+}
+html {
+    scroll-behavior: smooth;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a.loginbut::after {
+    display: none;
+}
+nav ul li a:hover::after {
+    width: 100%;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.hidden { 
+    opacity: 0;
+    transition: all 2s;
+}
+.show {
+    opacity: 1;
+}
+nav .fa-solid{
+    display: none;
+}
+#color {
+    color: #7bbcca;
+}
+
+/* your section */
+.containerlogin {
+    display: flex;
+    height: auto;
+    width: 350px;
+    margin-top: 60px;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    justify-content: center;
+}
+.centerloginpage {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* footer section */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.customrow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.customrow a {
+    text-decoration: none;
+    color: white;
+}
+@media (max-width: 769px) {
+    section {
+        max-width: 769px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul {
+        background: #002C3E;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+        margin: 0;
+    }
+    nav ul li {
+        display: block;
+        margin: 25px; 
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        cursor: pointer;
+        top: 25px;
+        left: 62px;
+    }
+    .customrow {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
