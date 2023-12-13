@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/booking.css">
+  <link rel="stylesheet" href="css/mdb.min.css" />
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://kit.fontawesome.com/8edb512665.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>Fluffy Friends Grooming</title>
+</head>
+<body>
+    <!--This is the navigation bar section-->
+    <header>
+        <div id="Home">
+            <div class="toppart">
+                <nav>
+                    <h2>Fluffy Friends</h2>
+                    <ul class="navigation" id="sidemenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Service</a></li>
+                        <li><a href="About Us.html">About</a></li>
+                        <li><a href="support.html">Support</a></li>
+                        <li><a href="Login.html" class="loginbut"><button type="button" class="btn btn-light" id="color" >LOGIN</button></a></li>
+                        <i style="color:white" class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i style="color:white" class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+            </div>
+        </div>
+    </header>
+      <!--My section-->
+        <div class="d-flex align-items-center justify-content-evenly gap-4">
+            <img class="rounded img-fluid" src="bookimage/bath.jpg" alt="Groomed Dog Image">
+        </div>
+    <div class="container text-center p-5 pb-1">
+      <h2>About our groomming service.</h2>
+      <h5 class="">Discover the care and expertise your pets deserve at Furry Friends Grooming Service. We're not just about appearances; we're about the well-being and comfort of your furry family members. Our skilled groomers focus on practicality and love, ensuring your pets leave not just looking good, but feeling great too. From soothing baths and precision haircuts to nail trims with finesse, we've got the essentials covered. We understand that each pet is unique, so we tailor our services to their individual needs. Experience grooming that goes beyond aesthetics – it's about enhancing the health and happiness of your pets, one session at a time.</h5>
+    </div>
+
+    <hr class="my-5" />
+    
+    <div class="text-center p-3">
+        <h2 class="mb-4">Why Choose Our Grooming Haven?</h2>
+        <div class="container pt-3">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <ul class="list-unstyled">
+                        <li class="mb-4">
+                            <h5>Experienced Grooming Experts</h5>
+                            <p>Our grooming team consists of experienced and passionate professionals who are dedicated to providing the highest standard of care for your pets. With a keen eye for detail, we ensure that each grooming session meets the unique needs of your furry friend.</p>
+                        </li>
+                        <li class="mb-4">
+                            <h5>Comprehensive Grooming Services</h5>
+                            <p>From stylish haircuts and soothing baths to nail trimming and ear cleaning, we offer a full range of grooming services tailored to suit the specific requirements of various breeds and personalities.</p>
+                        </li>
+                        <li class="mb-4">
+                            <h5>Pet-Friendly Environment</h5>
+                            <p>We've created a welcoming and pet-friendly environment to make the grooming experience enjoyable for your pets. Our groomers engage with them in a gentle and positive manner, promoting a stress-free atmosphere.</p>
+                        </li>
+                        <li class="mb-4">
+                            <h5>State-of-the-Art Facilities</h5>
+                            <p>Our grooming facilities are equipped with the latest tools and equipment to deliver a professional grooming experience. We prioritize hygiene and cleanliness to ensure a safe and comfortable space for your pets.</p>
+                        </li>
+                        <li class="mb-4">
+                            <h5>Health and Wellness Check</h5>
+                            <p>During grooming sessions, our experienced groomers conduct a health and wellness check to identify any potential issues. This added attention ensures that your pet is not only well-groomed but also in optimal health.</p>
+                        </li>
+                        <li>
+                            <h5>Positive Grooming Experience</h5>
+                            <p>We believe in creating a positive grooming experience for both pets and their owners. Our goal is to make each visit enjoyable, leaving your pets looking fabulous and you, the owner, completely satisfied.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="my-5" />
+
+    
+      <div class="container-fluid bg-info-subtle-transparent rounded shadow border mt-3" style="max-width: 650px;">
+        <form class="mb-3 p-3">
+          <div class="form-group">
+            <div class="button-box">
+             <div id="btn"></div>
+              <button type="button" id="toggle-dog" class="toggle-btn" onclick="leftClick()">Dog</button>
+              <button type="button" id="toggle-cat" class="toggle-btn" onclick="rightClick()">Cat</button>
+             </div>
+
+            <label for="inputPetName">Pet Name:</label>
+            <input type="text" class="form-control" id="inputPetName" placeholder="Enter your companion name...">
+            
+            <label for="GroomingOption">Choose your your companion size :</label>
+            <select class="form-control mb-3" id="petsize">
+              <option>...</option>
+              <option>Big size</option>
+              <option>Medium size</option>
+              <option>Small size</option>
+              <option>XSmall size</option>
+              <option>Catto (FOR CAT ONLY)</option>
+            </select>
+
+            <label for="pickDate">Select your date :</label>
+            <input id="startDate" class="form-control" type="date" id="pickDate">
+
+            <label for="timeOption">Choose your grooming time :</label>
+            <select class="form-control mb-3" id="timecheckin">
+              <option>...</option>
+              <option>10.00 - 12.00</option>
+              <option>11.00 - 13.00</option>
+              <option>12.00 - 14.00</option>
+              <option>13.00 - 15.00</option>
+              <option>14.00 - 16.00</option>
+              <option>15.00 - 17.00</option>
+              <option>16.00 - 18.00</option>
+              <option>17.00 - 19.00</option>
+            </select>
+            
+            <label for="inputAddress">Address :</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Entert your address...">
+            
+            <label for="inputContact">Contact :</label>
+            <input type="text" class="form-control" id="inputContact" placeholder="Entert your contact number...">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea">Tell us more about your companions and your request :     </label>
+            <br>
+            <label for="exampleFormControlTextarea" class="text-danger">*Optional</label>
+            <textarea class="form-control" id="exampleFormControlTextarea" rows="3" placeholder="He's a good boyyy"></textarea>
+          </div>
+
+        <div class="text-end">
+          <button type="button" class="btn btn-primary mt-3" id="book">Book</button>
+        </div>
+
+      </form>
+    </div>
+
+   
+    <!--This is the footer bar section-->
+    <footer style="margin-top: 5%;">
+      <div class="customrow">
+          <div class="col-md m-4">
+              <h3>Useful Links</h3>
+              <a href="services.html">Service</a>
+              <a href="AboutUs.html">About</a>
+              <a href="support.html">Support</a>
+          </div>
+          <div class="col-md m-4">
+              <h3>Newsletter</h3>
+              <form>
+                <input class="form-control" type="email" placeholder="Your Email Address" id="email1">
+                <br>
+                <button class="btn btn-light" type="button" id="subcribe">Subcribe Now</button>
+            </form>
+          </div>
+          <div class="col-md m-4">
+              <h3>Contact</h3>
+              <p>123, ABC Road, DEF 3<br>South Jakarta, Jakarta, IDN</p>
+              <p>+62 1234567891</p>
+          </div>
+      </div>
+  </footer>
+  <script defer src="js/bookindex.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+  </body>
+</html>
