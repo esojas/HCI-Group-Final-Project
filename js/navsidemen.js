@@ -14,7 +14,7 @@ $("#submit").click(function(){
     var password = $("#password").val();
     var email = $("#email").val();
 
-    if (password !== "" || email == "") {
+    if (password == "" || email == "") {
         swal({
             title: "Log in Failed",
             text: "Account doesnt exist",
