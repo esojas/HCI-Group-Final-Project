@@ -19,13 +19,13 @@ function closemenu(){
   
 
 $("#book").click(function(){
-    var name = $("inputPetName").val();
+    var name = $("#inputPetName").val();
     var size = $("#petsize").val();
     var datein = $("#pickDateIn").val();
     var dateout = $("#pickDateOut").val();
     var address = $("#inputAddress").val();
     var contact = $("#inputContact").val();
-    var consultation = $("consutationCheckin").val();
+    var consultation = $("#consutationCheckin").val();
     var training = $("#trainingduration").val();
     var groomtime = $("#timecheckin").val();
 
