@@ -4,9 +4,9 @@ Class: L1CC
 Group: Tech Edge
 
 Members:
-2702357932 - Antonius Jose Arviano Sundoro
-2702359572 - Marcellinus Ganesia Luviandanu
-2702357970 - Brandon
+- 2702357932 - Antonius Jose Arviano Sundoro
+- 2702359572 - Marcellinus Ganesia Luviandanu
+- 2702357970 - Brandon
 
 # HCI-Group-Final-Project
  This github serves as a the TechEdge HCI Project, "Furry Friends." The project is a user-centric web application designed to streamline and simplify the process of booking various pet care services, including grooming, veterinary care, pet hotel reservations, pet training sessions, and even pet adoption.
