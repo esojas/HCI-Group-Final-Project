@@ -13,12 +13,12 @@ Members:
 
 # Functionality
 this curent prototype is able to:
-- User are able to register/login/send an email if forgot password. Additionally it can detect also if the fields are empty or the password isnt matching when registering or sending an email when forgeting its password. However, it doesnt a have database so it doesnt really work.
-- User can subcribe to newsletter. However again the only function in here is to detect if its empty or not
-- User can view our location in our about us page in google map. However we use Fx sudirman as the place since Fluffy Friends doesnt actually exist
-- User are able to show and hide within a click of a button in the FAQ section
+- User are able to register/login/send an email if forgot password. Additionally it can also detect if the fields are empty or the password is not matching especially for registering and sending an email when you forgot your password. However, it doesn't have a database so it doesn't really work.
+- User can subscribe to the newsletter. However again the only function in here is to detect if its empty or not
+- User can view our location in our about us page in google map. However we use Fx Sudirman as the place since Fluffy Friends doesn't actually exist.
+- User are able to show and hide within a click of a button in the FAQ section.
 - In the adoption page user can view either dogs or cats with a click of a button
-- In all of the booking page it can detect if any of the field is not filled in. Where it will then give a popup of error just like the login page. However, no actual information is safe since there is no database.
+
 
 # Programming Language
 - CSS
